@@ -1,0 +1,43 @@
+
+
+@media (max-width: 768px){
+    body{
+        background-color: green;
+        font-size: medium;
+    }
+    .container {
+        display: grid; 
+        grid-template-columns: 1fr 2fr; 
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+    #large{
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+    /* #large, #small{
+        display: none;
+    }
+    #medium{
+        display: block;
+    } */
+}
+
+@media (max-width: 410px) { 
+    body{
+        background-color: red ;
+        font-size: small;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    /* #medium, #large{
+        display: none;
+    }
+    #small{
+        display: block;
+    } */
+}
+
